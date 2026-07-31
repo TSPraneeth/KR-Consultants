@@ -1,0 +1,12 @@
+{
+  "name": "kr-consultants",
+  "version": "1.0.0",
+  "private": true,
+  "devDependencies": {
+    "sass": "^1.85.0"
+  },
+  "scripts": {
+    "build:sass": "sass styles.scss styles.css",
+    "watch:sass": "sass --watch styles.scss:styles.css"
+  }
+}

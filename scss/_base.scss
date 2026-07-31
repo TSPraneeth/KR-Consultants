@@ -1,0 +1,82 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BASE */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #FFFFFF;
+}
+
+/* CONTAINER */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-unit);
+}
+
+/* TEXT CONTRAST CLASSES */
+.section-light-text {
+    h1,
+    h2,
+    h3,
+    h4,
+    p,
+    li {
+        color: var(--text-light);
+    }
+}
+
+.section-dark-text {
+    h1,
+    h2,
+    h3,
+    h4,
+    p,
+    li {
+        color: var(--text-dark);
+    }
+}
+
+/* SECTION LABELS */
+.section-light-text .section-label {
+    background-color: rgba(255,255,255,0.15);
+    color: var(--text-light);
+}
+
+.section-dark-text .section-label {
+    background-color: rgba(255,255,255,0.12);
+    color: var(--text-dark);
+}
+
+/* BUTTONS */
+.btn {
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.section-light-text .btn-primary {
+    background-color: #FFFFFF;
+    color: var(--primary-color);
+}
+
+.section-dark-text .btn-primary {
+    background-color: var(--text-dark);
+    color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+}

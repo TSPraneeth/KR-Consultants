@@ -1,0 +1,325 @@
+/* SECTION GRADIENTS — ALTERNATING */
+
+/* 1. HERO — Gradient A */
+.hero {
+    background: linear-gradient(135deg, #14404E 0%, #0F2C38 100%);
+    padding: 6rem var(--spacing-unit);
+}
+
+.hero-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+/* 2. ABOUT — Gradient B */
+.about {
+    background: linear-gradient(135deg, #0F2C38 0%, #14404E 100%);
+    padding: 6rem var(--spacing-unit);
+}
+
+.about-grid,
+.expertise-grid,
+.services-grid,
+.stats-grid,
+.cases-grid,
+.testimonials-grid,
+.credentials-grid,
+.footer-content {
+    display: grid;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.about-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.about-card,
+.expertise-card,
+.service-card,
+.stat-card,
+.case-card,
+.testimonial-card {
+    background-color: rgba(255,255,255,0.12);
+    padding: 2rem;
+    border-radius: 0.75rem;
+    transition: all 0.3s ease;
+}
+
+.section-dark-text .about-card,
+.section-dark-text .expertise-card,
+.section-dark-text .service-card,
+.section-dark-text .stat-card,
+.section-dark-text .case-card,
+.section-dark-text .testimonial-card,
+.section-dark-text .timeline-content {
+    background-color: rgba(255,255,255,0.08);
+}
+
+.about-card {
+    border-left: 4px solid var(--primary-color);
+}
+
+.about-card:hover,
+.expertise-card:hover,
+.service-card:hover,
+.testimonial-card:hover {
+    transform: translateY(-4px);
+}
+
+.expertise-card {
+    border-top: 3px solid transparent;
+}
+
+.expertise-card:hover {
+    border-top-color: var(--text-light);
+}
+
+/* 3. JOURNEY — Gradient A */
+.journey {
+    background: linear-gradient(135deg, #14404E 0%, #0F2C38 100%);
+    padding: 6rem var(--spacing-unit);
+}
+
+.timeline {
+    margin-top: 3rem;
+    position: relative;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100%;
+    background-color: var(--text-light);
+}
+
+.timeline-item {
+    margin-bottom: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+.timeline-item:nth-child(even) {
+    direction: rtl;
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+    direction: ltr;
+}
+
+.timeline-marker {
+    width: 20px;
+    height: 20px;
+    background-color: var(--text-light);
+    border: 4px solid rgba(255,255,255,0.2);
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.timeline-content {
+    background-color: rgba(255,255,255,0.12);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+}
+
+/* 4. EXPERTISE — Gradient B */
+.expertise {
+    background: linear-gradient(135deg, #0F2C38 0%, #14404E 100%);
+    padding: 6rem var(--spacing-unit);
+}
+
+.expertise-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.expertise-card {
+    background-color: rgba(255,255,255,0.12);
+}
+
+/* 5. SERVICES — Gradient A */
+.services {
+    background: linear-gradient(135deg, #14404E 0%, #0F2C38 100%);
+    padding: 6rem var(--spacing-unit);
+}
+
+.services-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.service-card {
+    text-align: center;
+}
+
+.service-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+/* 6. IMPACT — Gradient B */
+.impact {
+    background: linear-gradient(135deg, #0F2C38 0%, #14404E 100%);
+    padding: 6rem var(--spacing-unit);
+}
+
+.stats-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.stat-card {
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--accent-color);
+}
+
+/* 7. CASE STUDIES — Gradient A */
+.case-studies {
+    background: linear-gradient(135deg, #14404E 0%, #0F2C38 100%);
+    padding: 6rem var(--spacing-unit);
+}
+
+.cases-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.case-card {
+    border-left: 4px solid var(--text-light);
+}
+
+.section-dark-text .case-card {
+    border-left-color: var(--text-dark);
+}
+
+/* 8. TESTIMONIALS — Gradient B */
+.testimonials {
+    background: linear-gradient(135deg, #0F2C38 0%, #14404E 100%);
+    padding: 6rem var(--spacing-unit);
+}
+
+.testimonials-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.testimonial-card {
+    border-left: 4px solid var(--text-light);
+}
+
+.testimonial-card:hover {
+    transform: translateY(-4px);
+}
+
+.quote {
+    font-size: 1.05rem;
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+.author {
+    font-weight: 600;
+}
+
+/* 9. CREDENTIALS — Gradient A */
+.credentials {
+    background: linear-gradient(135deg, #14404E 0%, #0F2C38 100%);
+    padding: 6rem var(--spacing-unit);
+}
+
+.credentials-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+}
+
+.credential-column h4 {
+    margin-bottom: 1.5rem;
+}
+
+.credential-list {
+    list-style: none;
+}
+
+.credential-list li {
+    padding: 0.75rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.credential-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+    color: var(--accent-color);
+}
+
+/* 10. CTA — Gradient B */
+.cta {
+    background: linear-gradient(135deg, #0F2C38 0%, #14404E 100%);
+    padding: 6rem var(--spacing-unit);
+    text-align: center;
+}
+
+.cta h2 {
+    margin-bottom: 1rem;
+}
+
+.cta p {
+    font-size: 1.125rem;
+    margin-bottom: 2rem;
+}
+
+/* 11. FOOTER — Gradient A */
+.footer {
+    background: linear-gradient(135deg, #14404E 0%, #0F2C38 100%);
+    padding: 4rem var(--spacing-unit);
+}
+
+.footer-section h4 {
+    margin-bottom: 1rem;
+}
+
+.footer-section p {
+    margin-bottom: 0.5rem;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-section a {
+    text-decoration: none;
+    color: #E6EEF2;
+    transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+    color: var(--accent-color);
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.2);
+    padding-top: 2rem;
+    text-align: center;
+}
