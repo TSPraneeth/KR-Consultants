@@ -27,6 +27,7 @@
 }
 
 .about-grid,
+.about-subgrid,
 .expertise-grid,
 .services-grid,
 .stats-grid,
@@ -67,6 +68,13 @@
 
 .about-card {
     border-left: 4px solid var(--primary-color);
+}
+
+.about-subcard {
+    background-color: rgba(255,255,255,0.08);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
 }
 
 .about-card:hover,
