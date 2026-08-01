@@ -111,6 +111,11 @@ body {
   color: #FFFFFF;
 }
 
+.navbar .nav-title,
+.navbar a:hover {
+  color: var(--accent-color);
+}
+
 .nav-brand {
   display: flex;
   align-items: center;

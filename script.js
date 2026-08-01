@@ -1,15 +1,7 @@
 // ELEMENTS
 const navMenu = document.getElementById('navMenu');
 const hamburger = document.getElementById('hamburger');
-const navLogo = document.getElementById('navLogo');
 
-// RANDOM LOGOS FOR MOBILE
-const logos = [
-    "https://picsum.photos/seed/logo1/80",
-    "https://picsum.photos/seed/logo2/80",
-    "https://picsum.photos/seed/logo3/80",
-    "https://picsum.photos/seed/logo4/80"
-];
 
 // HANDLE NAVBAR MODE (DESKTOP vs MOBILE)
 function updateNavbarMode() {
@@ -17,9 +9,6 @@ function updateNavbarMode() {
         // MOBILE MODE
         navMenu.classList.add("mobile");
         hamburger.style.display = "flex";
-
-        // Random mobile logo
-        navLogo.src = logos[Math.floor(Math.random() * logos.length)];
 
         // Hide desktop menu
         navMenu.style.display = "none";
@@ -33,8 +22,6 @@ function updateNavbarMode() {
         navMenu.style.display = "flex";
         hamburger.style.display = "none";
 
-        // Desktop logo
-        navLogo.src = "./assets/logo.png";
     }
 }
 
