@@ -248,6 +248,7 @@ body {
 }
 
 #about-subcard {
+  margin-top: 0;
   text-align: center;
   align-items: center;
   align-content: center;
