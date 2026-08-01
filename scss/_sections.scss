@@ -27,7 +27,7 @@
 }
 
 .about-grid,
-.about-subgrid,
+.about-subcard,
 .expertise-grid,
 .services-grid,
 .stats-grid,
@@ -40,12 +40,13 @@
     margin-top: 3rem;
 }
 
-#about {
+#about-subcard {
     text-align: center;
     align-items: center;
+    align-content: center;
 }
 
-.about-grid, .about-subgrid {
+.about-grid, .about-subcard {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
