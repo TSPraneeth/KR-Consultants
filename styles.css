@@ -248,6 +248,7 @@ body {
 }
 
 #about-subcard {
+  margin-top: 0;
   text-align: center;
   align-items: center;
   align-content: center;
@@ -321,22 +322,12 @@ body {
   position: relative;
 }
 
-.timeline::before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 2px;
-  height: 100%;
-  background-color: var(--text-light);
-}
-
 .timeline-item {
   margin-bottom: 3rem;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 2rem;
-  align-items: center;
+  align-items: normal;
 }
 
 .timeline-item:nth-child(even) {
